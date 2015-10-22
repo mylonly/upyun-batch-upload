@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBCD7A65B4762E90C4239478 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35705DCA91FA009AACB31664 /* libPods.a */; };
+		E44F3DFC1BD8C094008C8DC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3DFB1BD8C094008C8DC0 /* main.m */; };
+		E44F3DFF1BD8C094008C8DC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3DFE1BD8C094008C8DC0 /* AppDelegate.m */; };
+		E44F3E021BD8C094008C8DC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E011BD8C094008C8DC0 /* ViewController.m */; };
+		E44F3E051BD8C094008C8DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44F3E031BD8C094008C8DC0 /* Main.storyboard */; };
+		E44F3E071BD8C094008C8DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44F3E061BD8C094008C8DC0 /* Assets.xcassets */; };
+		E44F3E0A1BD8C094008C8DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44F3E081BD8C094008C8DC0 /* LaunchScreen.storyboard */; };
+		E44F3E151BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E141BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.m */; };
+		E44F3E201BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E1F1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.m */; };
+		E44F3E4E1BD8CBB4008C8DC0 /* NSData+MD5Digest.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E451BD8CBB4008C8DC0 /* NSData+MD5Digest.m */; settings = {ASSET_TAGS = (); }; };
+		E44F3E4F1BD8CBB4008C8DC0 /* NSString+Base64Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E471BD8CBB4008C8DC0 /* NSString+Base64Encode.m */; settings = {ASSET_TAGS = (); }; };
+		E44F3E501BD8CBB4008C8DC0 /* NSString+NSHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E491BD8CBB4008C8DC0 /* NSString+NSHash.m */; settings = {ASSET_TAGS = (); }; };
+		E44F3E511BD8CBB4008C8DC0 /* UMUUploaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E4B1BD8CBB4008C8DC0 /* UMUUploaderManager.m */; settings = {ASSET_TAGS = (); }; };
+		E44F3E521BD8CBB4008C8DC0 /* UMUUploaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E4D1BD8CBB4008C8DC0 /* UMUUploaderOperation.m */; settings = {ASSET_TAGS = (); }; };
+		E44F3E551BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E541BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m */; settings = {ASSET_TAGS = (); }; };
+		E44F3E581BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E571BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E44F3E111BD8C094008C8DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E44F3DEF1BD8C094008C8DC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E44F3DF61BD8C094008C8DC0;
+			remoteInfo = RTUpyunBatchUploadDemo;
+		};
+		E44F3E1C1BD8C094008C8DC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E44F3DEF1BD8C094008C8DC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E44F3DF61BD8C094008C8DC0;
+			remoteInfo = RTUpyunBatchUploadDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35705DCA91FA009AACB31664 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2EA54C8449E2F0FD0F9DAF5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D9EF5B98FAFF500926681B73 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E44F3DF71BD8C094008C8DC0 /* RTUpyunBatchUploadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTUpyunBatchUploadDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44F3DFB1BD8C094008C8DC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E44F3DFD1BD8C094008C8DC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E44F3DFE1BD8C094008C8DC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E44F3E001BD8C094008C8DC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E44F3E011BD8C094008C8DC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E44F3E041BD8C094008C8DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E44F3E061BD8C094008C8DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E44F3E091BD8C094008C8DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E44F3E0B1BD8C094008C8DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44F3E101BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTUpyunBatchUploadDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44F3E141BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUpyunBatchUploadDemoTests.m; sourceTree = "<group>"; };
+		E44F3E161BD8C094008C8DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44F3E1B1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTUpyunBatchUploadDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44F3E1F1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTUpyunBatchUploadDemoUITests.m; sourceTree = "<group>"; };
+		E44F3E211BD8C094008C8DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44F3E441BD8CBB4008C8DC0 /* NSData+MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5Digest.h"; sourceTree = "<group>"; };
+		E44F3E451BD8CBB4008C8DC0 /* NSData+MD5Digest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5Digest.m"; sourceTree = "<group>"; };
+		E44F3E461BD8CBB4008C8DC0 /* NSString+Base64Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64Encode.h"; sourceTree = "<group>"; };
+		E44F3E471BD8CBB4008C8DC0 /* NSString+Base64Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64Encode.m"; sourceTree = "<group>"; };
+		E44F3E481BD8CBB4008C8DC0 /* NSString+NSHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSHash.h"; sourceTree = "<group>"; };
+		E44F3E491BD8CBB4008C8DC0 /* NSString+NSHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSHash.m"; sourceTree = "<group>"; };
+		E44F3E4A1BD8CBB4008C8DC0 /* UMUUploaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMUUploaderManager.h; sourceTree = "<group>"; };
+		E44F3E4B1BD8CBB4008C8DC0 /* UMUUploaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMUUploaderManager.m; sourceTree = "<group>"; };
+		E44F3E4C1BD8CBB4008C8DC0 /* UMUUploaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMUUploaderOperation.h; sourceTree = "<group>"; };
+		E44F3E4D1BD8CBB4008C8DC0 /* UMUUploaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMUUploaderOperation.m; sourceTree = "<group>"; };
+		E44F3E531BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUpyunBatchUploadManager.h; sourceTree = "<group>"; };
+		E44F3E541BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUpyunBatchUploadManager.m; sourceTree = "<group>"; };
+		E44F3E561BD8D4C4008C8DC0 /* RTUpyunSingleUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUpyunSingleUploader.h; sourceTree = "<group>"; };
+		E44F3E571BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUpyunSingleUploader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E44F3DF41BD8C094008C8DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBCD7A65B4762E90C4239478 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44F3E0D1BD8C094008C8DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44F3E181BD8C094008C8DC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E44F3DEE1BD8C094008C8DC0 = {
+			isa = PBXGroup;
+			children = (
+				E44F3E401BD8CBB4008C8DC0 /* RTUpyunBatchUpload */,
+				E44F3DF91BD8C094008C8DC0 /* RTUpyunBatchUploadDemo */,
+				E44F3E131BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests */,
+				E44F3E1E1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests */,
+				E44F3DF81BD8C094008C8DC0 /* Products */,
+				F492D3BB0BC6F5ABC64B7A63 /* Pods */,
+				EFEA95CFCB30CE19FA141BA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E44F3DF81BD8C094008C8DC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3DF71BD8C094008C8DC0 /* RTUpyunBatchUploadDemo.app */,
+				E44F3E101BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.xctest */,
+				E44F3E1B1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E44F3DF91BD8C094008C8DC0 /* RTUpyunBatchUploadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3DFD1BD8C094008C8DC0 /* AppDelegate.h */,
+				E44F3DFE1BD8C094008C8DC0 /* AppDelegate.m */,
+				E44F3E001BD8C094008C8DC0 /* ViewController.h */,
+				E44F3E011BD8C094008C8DC0 /* ViewController.m */,
+				E44F3E031BD8C094008C8DC0 /* Main.storyboard */,
+				E44F3E061BD8C094008C8DC0 /* Assets.xcassets */,
+				E44F3E081BD8C094008C8DC0 /* LaunchScreen.storyboard */,
+				E44F3E0B1BD8C094008C8DC0 /* Info.plist */,
+				E44F3DFA1BD8C094008C8DC0 /* Supporting Files */,
+			);
+			path = RTUpyunBatchUploadDemo;
+			sourceTree = "<group>";
+		};
+		E44F3DFA1BD8C094008C8DC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3DFB1BD8C094008C8DC0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E44F3E131BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3E141BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.m */,
+				E44F3E161BD8C094008C8DC0 /* Info.plist */,
+			);
+			path = RTUpyunBatchUploadDemoTests;
+			sourceTree = "<group>";
+		};
+		E44F3E1E1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3E1F1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.m */,
+				E44F3E211BD8C094008C8DC0 /* Info.plist */,
+			);
+			path = RTUpyunBatchUploadDemoUITests;
+			sourceTree = "<group>";
+		};
+		E44F3E401BD8CBB4008C8DC0 /* RTUpyunBatchUpload */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3E411BD8CBB4008C8DC0 /* Classes */,
+				E44F3E421BD8CBB4008C8DC0 /* Vendor */,
+			);
+			path = RTUpyunBatchUpload;
+			sourceTree = "<group>";
+		};
+		E44F3E411BD8CBB4008C8DC0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3E531BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.h */,
+				E44F3E541BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m */,
+				E44F3E561BD8D4C4008C8DC0 /* RTUpyunSingleUploader.h */,
+				E44F3E571BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E44F3E421BD8CBB4008C8DC0 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3E431BD8CBB4008C8DC0 /* upyunMultipartUploadSDK */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E44F3E431BD8CBB4008C8DC0 /* upyunMultipartUploadSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E44F3E441BD8CBB4008C8DC0 /* NSData+MD5Digest.h */,
+				E44F3E451BD8CBB4008C8DC0 /* NSData+MD5Digest.m */,
+				E44F3E461BD8CBB4008C8DC0 /* NSString+Base64Encode.h */,
+				E44F3E471BD8CBB4008C8DC0 /* NSString+Base64Encode.m */,
+				E44F3E481BD8CBB4008C8DC0 /* NSString+NSHash.h */,
+				E44F3E491BD8CBB4008C8DC0 /* NSString+NSHash.m */,
+				E44F3E4A1BD8CBB4008C8DC0 /* UMUUploaderManager.h */,
+				E44F3E4B1BD8CBB4008C8DC0 /* UMUUploaderManager.m */,
+				E44F3E4C1BD8CBB4008C8DC0 /* UMUUploaderOperation.h */,
+				E44F3E4D1BD8CBB4008C8DC0 /* UMUUploaderOperation.m */,
+			);
+			path = upyunMultipartUploadSDK;
+			sourceTree = "<group>";
+		};
+		EFEA95CFCB30CE19FA141BA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35705DCA91FA009AACB31664 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F492D3BB0BC6F5ABC64B7A63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2EA54C8449E2F0FD0F9DAF5 /* Pods.debug.xcconfig */,
+				D9EF5B98FAFF500926681B73 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E44F3DF61BD8C094008C8DC0 /* RTUpyunBatchUploadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44F3E241BD8C094008C8DC0 /* Build configuration list for PBXNativeTarget "RTUpyunBatchUploadDemo" */;
+			buildPhases = (
+				933D56B41BDE756FE46DA886 /* Check Pods Manifest.lock */,
+				E44F3DF31BD8C094008C8DC0 /* Sources */,
+				E44F3DF41BD8C094008C8DC0 /* Frameworks */,
+				E44F3DF51BD8C094008C8DC0 /* Resources */,
+				56DFF03AB72A3685B0E8703E /* Embed Pods Frameworks */,
+				45CF516CD9332B58C2F9E750 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTUpyunBatchUploadDemo;
+			productName = RTUpyunBatchUploadDemo;
+			productReference = E44F3DF71BD8C094008C8DC0 /* RTUpyunBatchUploadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E44F3E0F1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44F3E271BD8C094008C8DC0 /* Build configuration list for PBXNativeTarget "RTUpyunBatchUploadDemoTests" */;
+			buildPhases = (
+				E44F3E0C1BD8C094008C8DC0 /* Sources */,
+				E44F3E0D1BD8C094008C8DC0 /* Frameworks */,
+				E44F3E0E1BD8C094008C8DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E44F3E121BD8C094008C8DC0 /* PBXTargetDependency */,
+			);
+			name = RTUpyunBatchUploadDemoTests;
+			productName = RTUpyunBatchUploadDemoTests;
+			productReference = E44F3E101BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E44F3E1A1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E44F3E2A1BD8C094008C8DC0 /* Build configuration list for PBXNativeTarget "RTUpyunBatchUploadDemoUITests" */;
+			buildPhases = (
+				E44F3E171BD8C094008C8DC0 /* Sources */,
+				E44F3E181BD8C094008C8DC0 /* Frameworks */,
+				E44F3E191BD8C094008C8DC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E44F3E1D1BD8C094008C8DC0 /* PBXTargetDependency */,
+			);
+			name = RTUpyunBatchUploadDemoUITests;
+			productName = RTUpyunBatchUploadDemoUITests;
+			productReference = E44F3E1B1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E44F3DEF1BD8C094008C8DC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "田祥根";
+				TargetAttributes = {
+					E44F3DF61BD8C094008C8DC0 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					E44F3E0F1BD8C094008C8DC0 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E44F3DF61BD8C094008C8DC0;
+					};
+					E44F3E1A1BD8C094008C8DC0 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = E44F3DF61BD8C094008C8DC0;
+					};
+				};
+			};
+			buildConfigurationList = E44F3DF21BD8C094008C8DC0 /* Build configuration list for PBXProject "RTUpyunBatchUploadDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E44F3DEE1BD8C094008C8DC0;
+			productRefGroup = E44F3DF81BD8C094008C8DC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E44F3DF61BD8C094008C8DC0 /* RTUpyunBatchUploadDemo */,
+				E44F3E0F1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests */,
+				E44F3E1A1BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E44F3DF51BD8C094008C8DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44F3E0A1BD8C094008C8DC0 /* LaunchScreen.storyboard in Resources */,
+				E44F3E071BD8C094008C8DC0 /* Assets.xcassets in Resources */,
+				E44F3E051BD8C094008C8DC0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44F3E0E1BD8C094008C8DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44F3E191BD8C094008C8DC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45CF516CD9332B58C2F9E750 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56DFF03AB72A3685B0E8703E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		933D56B41BDE756FE46DA886 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E44F3DF31BD8C094008C8DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44F3E551BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m in Sources */,
+				E44F3E581BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m in Sources */,
+				E44F3E021BD8C094008C8DC0 /* ViewController.m in Sources */,
+				E44F3E4E1BD8CBB4008C8DC0 /* NSData+MD5Digest.m in Sources */,
+				E44F3E501BD8CBB4008C8DC0 /* NSString+NSHash.m in Sources */,
+				E44F3DFF1BD8C094008C8DC0 /* AppDelegate.m in Sources */,
+				E44F3E511BD8CBB4008C8DC0 /* UMUUploaderManager.m in Sources */,
+				E44F3E521BD8CBB4008C8DC0 /* UMUUploaderOperation.m in Sources */,
+				E44F3E4F1BD8CBB4008C8DC0 /* NSString+Base64Encode.m in Sources */,
+				E44F3DFC1BD8C094008C8DC0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44F3E0C1BD8C094008C8DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44F3E151BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44F3E171BD8C094008C8DC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E44F3E201BD8C094008C8DC0 /* RTUpyunBatchUploadDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E44F3E121BD8C094008C8DC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E44F3DF61BD8C094008C8DC0 /* RTUpyunBatchUploadDemo */;
+			targetProxy = E44F3E111BD8C094008C8DC0 /* PBXContainerItemProxy */;
+		};
+		E44F3E1D1BD8C094008C8DC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E44F3DF61BD8C094008C8DC0 /* RTUpyunBatchUploadDemo */;
+			targetProxy = E44F3E1C1BD8C094008C8DC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E44F3E031BD8C094008C8DC0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E44F3E041BD8C094008C8DC0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E44F3E081BD8C094008C8DC0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E44F3E091BD8C094008C8DC0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E44F3E221BD8C094008C8DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E44F3E231BD8C094008C8DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E44F3E251BD8C094008C8DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2EA54C8449E2F0FD0F9DAF5 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RTUpyunBatchUploadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E44F3E261BD8C094008C8DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9EF5B98FAFF500926681B73 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RTUpyunBatchUploadDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E44F3E281BD8C094008C8DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RTUpyunBatchUploadDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTUpyunBatchUploadDemo.app/RTUpyunBatchUploadDemo";
+			};
+			name = Debug;
+		};
+		E44F3E291BD8C094008C8DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RTUpyunBatchUploadDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTUpyunBatchUploadDemo.app/RTUpyunBatchUploadDemo";
+			};
+			name = Release;
+		};
+		E44F3E2B1BD8C094008C8DC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RTUpyunBatchUploadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RTUpyunBatchUploadDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E44F3E2C1BD8C094008C8DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RTUpyunBatchUploadDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RTUpyunBatchUploadDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E44F3DF21BD8C094008C8DC0 /* Build configuration list for PBXProject "RTUpyunBatchUploadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44F3E221BD8C094008C8DC0 /* Debug */,
+				E44F3E231BD8C094008C8DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E44F3E241BD8C094008C8DC0 /* Build configuration list for PBXNativeTarget "RTUpyunBatchUploadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44F3E251BD8C094008C8DC0 /* Debug */,
+				E44F3E261BD8C094008C8DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E44F3E271BD8C094008C8DC0 /* Build configuration list for PBXNativeTarget "RTUpyunBatchUploadDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44F3E281BD8C094008C8DC0 /* Debug */,
+				E44F3E291BD8C094008C8DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E44F3E2A1BD8C094008C8DC0 /* Build configuration list for PBXNativeTarget "RTUpyunBatchUploadDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E44F3E2B1BD8C094008C8DC0 /* Debug */,
+				E44F3E2C1BD8C094008C8DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E44F3DEF1BD8C094008C8DC0 /* Project object */;
+}
