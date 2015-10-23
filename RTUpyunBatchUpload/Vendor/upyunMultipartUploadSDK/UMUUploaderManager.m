@@ -161,7 +161,8 @@ static NSMutableDictionary * managerRepository;
                     uploadedPercent-=1.0/filesStatus.count;
                 }
             }
-            
+
+
             id mergeRequestCompleteBlcok =^(NSError *error, NSDictionary *result, BOOL completed) {
                 if (completeBlock) {
                     if (completed) {
@@ -171,7 +172,7 @@ static NSMutableDictionary * managerRepository;
                     }
                 }
             };
-            
+
             if (uploadedPercent == 1.0f) {
                 [weakSelf fileMergeRequestWithSaveToken:saveToken
                                             tokenSecret:tokenSecret
@@ -188,7 +189,7 @@ static NSMutableDictionary * managerRepository;
                         progressBlock(totalPercent+uploadedPercent, fileData.length);
                     }
                 };
-                
+
                 id singleUploadCompleteBlock = ^(NSError *error, NSDictionary *result, BOOL completed) {
                     if (completed) {
                         successCount++;
@@ -218,6 +219,8 @@ static NSMutableDictionary * managerRepository;
             }
         }
     };
+    
+    
     [self prepareUploadRequestWithPolicy:policy
                                signature:signature
                               retryCount:0

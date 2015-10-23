@@ -11,7 +11,6 @@
 		E44F3DFC1BD8C094008C8DC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3DFB1BD8C094008C8DC0 /* main.m */; };
 		E44F3DFF1BD8C094008C8DC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3DFE1BD8C094008C8DC0 /* AppDelegate.m */; };
 		E44F3E021BD8C094008C8DC0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E011BD8C094008C8DC0 /* ViewController.m */; };
-		E44F3E051BD8C094008C8DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44F3E031BD8C094008C8DC0 /* Main.storyboard */; };
 		E44F3E071BD8C094008C8DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44F3E061BD8C094008C8DC0 /* Assets.xcassets */; };
 		E44F3E0A1BD8C094008C8DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44F3E081BD8C094008C8DC0 /* LaunchScreen.storyboard */; };
 		E44F3E151BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E141BD8C094008C8DC0 /* RTUpyunBatchUploadDemoTests.m */; };
@@ -23,6 +22,11 @@
 		E44F3E521BD8CBB4008C8DC0 /* UMUUploaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E4D1BD8CBB4008C8DC0 /* UMUUploaderOperation.m */; settings = {ASSET_TAGS = (); }; };
 		E44F3E551BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E541BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m */; settings = {ASSET_TAGS = (); }; };
 		E44F3E581BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3E571BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m */; settings = {ASSET_TAGS = (); }; };
+		E9917B191BD9D8D7003281CB /* RTUpyunBatchUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = E9917B181BD9D8D7003281CB /* RTUpyunBatchUploader.m */; settings = {ASSET_TAGS = (); }; };
+		E9917B2E1BDA2054003281CB /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9917B241BDA2054003281CB /* 0.jpg */; settings = {ASSET_TAGS = (); }; };
+		E9917B2F1BDA2054003281CB /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9917B251BDA2054003281CB /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
+		E9917B301BDA2054003281CB /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9917B261BDA2054003281CB /* 2.jpg */; settings = {ASSET_TAGS = (); }; };
+		E9917B311BDA2054003281CB /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9917B271BDA2054003281CB /* 3.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,6 @@
 		E44F3DFE1BD8C094008C8DC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E44F3E001BD8C094008C8DC0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E44F3E011BD8C094008C8DC0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E44F3E041BD8C094008C8DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E44F3E061BD8C094008C8DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44F3E091BD8C094008C8DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E44F3E0B1BD8C094008C8DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +79,12 @@
 		E44F3E541BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUpyunBatchUploadManager.m; sourceTree = "<group>"; };
 		E44F3E561BD8D4C4008C8DC0 /* RTUpyunSingleUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUpyunSingleUploader.h; sourceTree = "<group>"; };
 		E44F3E571BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUpyunSingleUploader.m; sourceTree = "<group>"; };
+		E9917B171BD9D8D7003281CB /* RTUpyunBatchUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTUpyunBatchUploader.h; sourceTree = "<group>"; };
+		E9917B181BD9D8D7003281CB /* RTUpyunBatchUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTUpyunBatchUploader.m; sourceTree = "<group>"; };
+		E9917B241BDA2054003281CB /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		E9917B251BDA2054003281CB /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		E9917B261BDA2054003281CB /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		E9917B271BDA2054003281CB /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +139,11 @@
 		E44F3DF91BD8C094008C8DC0 /* RTUpyunBatchUploadDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9917B1E1BDA2054003281CB /* testImages */,
 				E44F3DFD1BD8C094008C8DC0 /* AppDelegate.h */,
 				E44F3DFE1BD8C094008C8DC0 /* AppDelegate.m */,
 				E44F3E001BD8C094008C8DC0 /* ViewController.h */,
 				E44F3E011BD8C094008C8DC0 /* ViewController.m */,
-				E44F3E031BD8C094008C8DC0 /* Main.storyboard */,
 				E44F3E061BD8C094008C8DC0 /* Assets.xcassets */,
 				E44F3E081BD8C094008C8DC0 /* LaunchScreen.storyboard */,
 				E44F3E0B1BD8C094008C8DC0 /* Info.plist */,
@@ -185,6 +194,8 @@
 				E44F3E541BD8CC3C008C8DC0 /* RTUpyunBatchUploadManager.m */,
 				E44F3E561BD8D4C4008C8DC0 /* RTUpyunSingleUploader.h */,
 				E44F3E571BD8D4C4008C8DC0 /* RTUpyunSingleUploader.m */,
+				E9917B171BD9D8D7003281CB /* RTUpyunBatchUploader.h */,
+				E9917B181BD9D8D7003281CB /* RTUpyunBatchUploader.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -212,6 +223,17 @@
 				E44F3E4D1BD8CBB4008C8DC0 /* UMUUploaderOperation.m */,
 			);
 			path = upyunMultipartUploadSDK;
+			sourceTree = "<group>";
+		};
+		E9917B1E1BDA2054003281CB /* testImages */ = {
+			isa = PBXGroup;
+			children = (
+				E9917B241BDA2054003281CB /* 0.jpg */,
+				E9917B251BDA2054003281CB /* 1.jpg */,
+				E9917B261BDA2054003281CB /* 2.jpg */,
+				E9917B271BDA2054003281CB /* 3.jpg */,
+			);
+			path = testImages;
 			sourceTree = "<group>";
 		};
 		EFEA95CFCB30CE19FA141BA9 /* Frameworks */ = {
@@ -337,9 +359,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9917B311BDA2054003281CB /* 3.jpg in Resources */,
+				E9917B2F1BDA2054003281CB /* 1.jpg in Resources */,
+				E9917B2E1BDA2054003281CB /* 0.jpg in Resources */,
+				E9917B301BDA2054003281CB /* 2.jpg in Resources */,
 				E44F3E0A1BD8C094008C8DC0 /* LaunchScreen.storyboard in Resources */,
 				E44F3E071BD8C094008C8DC0 /* Assets.xcassets in Resources */,
-				E44F3E051BD8C094008C8DC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +444,7 @@
 				E44F3E501BD8CBB4008C8DC0 /* NSString+NSHash.m in Sources */,
 				E44F3DFF1BD8C094008C8DC0 /* AppDelegate.m in Sources */,
 				E44F3E511BD8CBB4008C8DC0 /* UMUUploaderManager.m in Sources */,
+				E9917B191BD9D8D7003281CB /* RTUpyunBatchUploader.m in Sources */,
 				E44F3E521BD8CBB4008C8DC0 /* UMUUploaderOperation.m in Sources */,
 				E44F3E4F1BD8CBB4008C8DC0 /* NSString+Base64Encode.m in Sources */,
 				E44F3DFC1BD8C094008C8DC0 /* main.m in Sources */,
@@ -457,14 +483,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E44F3E031BD8C094008C8DC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E44F3E041BD8C094008C8DC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E44F3E081BD8C094008C8DC0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
