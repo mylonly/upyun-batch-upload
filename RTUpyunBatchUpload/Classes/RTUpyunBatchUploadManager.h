@@ -22,4 +22,6 @@
 
 - (void)removeUploader:(RTUpyunSingleUploader*)uploader;
 
+- (RTUpyunSingleUploader*)getUploader:(NSString*)localPath;
+
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "RTUpyunSingleUploader.h"
-#import "RTUpyunBatchUploadManager.h"
 #import "UMUUploaderManager.h"
 #import "NSString+NSHash.h"
 #import "NSString+Base64Encode.h"
@@ -23,6 +22,7 @@
 @end
 
 @implementation RTUpyunSingleUploader
+
 
 - (id)initWithBuket:(NSString *)buket withPasscode:(NSString *)passcode
 {
@@ -123,6 +123,7 @@
     UMUUploaderManager * manager = [UMUUploaderManager managerWithBucket:_bucket];
     m_operation = [manager uploadWithFile:m_uploadData policy:m_policy signature:m_signature progressBlock:^(CGFloat percent, long long requestDidSendBytes) {
         NSLog(@"%f",percent);
+        self.percent = percent;
         if (_whenProgress)
         {
             _whenProgress(percent);
@@ -166,6 +167,7 @@
 {
     
 }
+
 
 
 /**

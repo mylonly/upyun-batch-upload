@@ -18,4 +18,6 @@
        withProgress:(UploadProgressBlock)progress
       withCompleted:(UploadCompletedBlock)completed;
 
+- (void)observeSingleUploaderProgress:(id)observer byLocalPath:(NSString*)localPath;
+
 @end

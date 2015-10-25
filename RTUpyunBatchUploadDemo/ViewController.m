@@ -57,9 +57,9 @@
     NSArray* serverPaths = @[@"0.jpg",@"1.jpg",@"2.jpg",@"3.jpg"];
     RTUpyunBatchUploader* batch = [[RTUpyunBatchUploader alloc] initWithBucket:@"babyun-stage" andPasscode:@"tFSoUOmw3NkNY6DKmqVnYcTqDaY="];
     [batch uploadFiles:m_testImagesPath savePaths:serverPaths withProgress:^(double precent) {
-        NSLog(@"%f",precent);
+        self.title = [NSString stringWithFormat:@"上传进度:%f",precent];
     } withCompleted:^(BOOL success) {
-        NSLog(@"All completed");
+        self.title = @"又拍云批量上传";
     }];
 }
 

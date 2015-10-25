@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185A08401BDB3F060031B8BD /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185A083A1BDB3F060031B8BD /* 4.jpg */; settings = {ASSET_TAGS = (); }; };
+		185A08411BDB3F060031B8BD /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185A083B1BDB3F060031B8BD /* 5.jpg */; settings = {ASSET_TAGS = (); }; };
+		185A08421BDB3F060031B8BD /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185A083C1BDB3F060031B8BD /* 6.jpg */; settings = {ASSET_TAGS = (); }; };
+		185A08431BDB3F060031B8BD /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185A083D1BDB3F060031B8BD /* 7.jpg */; settings = {ASSET_TAGS = (); }; };
+		185A08441BDB3F060031B8BD /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185A083E1BDB3F060031B8BD /* 8.jpg */; settings = {ASSET_TAGS = (); }; };
+		185A08451BDB3F060031B8BD /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185A083F1BDB3F060031B8BD /* 9.jpg */; settings = {ASSET_TAGS = (); }; };
+		185A08471BDB429D0031B8BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185A08461BDB429D0031B8BD /* CoreGraphics.framework */; };
 		BBCD7A65B4762E90C4239478 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35705DCA91FA009AACB31664 /* libPods.a */; };
 		E44F3DFC1BD8C094008C8DC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3DFB1BD8C094008C8DC0 /* main.m */; };
 		E44F3DFF1BD8C094008C8DC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F3DFE1BD8C094008C8DC0 /* AppDelegate.m */; };
@@ -47,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185A083A1BDB3F060031B8BD /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		185A083B1BDB3F060031B8BD /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		185A083C1BDB3F060031B8BD /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		185A083D1BDB3F060031B8BD /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		185A083E1BDB3F060031B8BD /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		185A083F1BDB3F060031B8BD /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		185A08461BDB429D0031B8BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		35705DCA91FA009AACB31664 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EA54C8449E2F0FD0F9DAF5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EF5B98FAFF500926681B73 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185A08471BDB429D0031B8BD /* CoreGraphics.framework in Frameworks */,
 				BBCD7A65B4762E90C4239478 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +247,12 @@
 				E9917B251BDA2054003281CB /* 1.jpg */,
 				E9917B261BDA2054003281CB /* 2.jpg */,
 				E9917B271BDA2054003281CB /* 3.jpg */,
+				185A083A1BDB3F060031B8BD /* 4.jpg */,
+				185A083B1BDB3F060031B8BD /* 5.jpg */,
+				185A083C1BDB3F060031B8BD /* 6.jpg */,
+				185A083D1BDB3F060031B8BD /* 7.jpg */,
+				185A083E1BDB3F060031B8BD /* 8.jpg */,
+				185A083F1BDB3F060031B8BD /* 9.jpg */,
 			);
 			path = testImages;
 			sourceTree = "<group>";
@@ -239,6 +260,7 @@
 		EFEA95CFCB30CE19FA141BA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				185A08461BDB429D0031B8BD /* CoreGraphics.framework */,
 				35705DCA91FA009AACB31664 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -359,10 +381,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185A08441BDB3F060031B8BD /* 8.jpg in Resources */,
+				185A08421BDB3F060031B8BD /* 6.jpg in Resources */,
 				E9917B311BDA2054003281CB /* 3.jpg in Resources */,
+				185A08411BDB3F060031B8BD /* 5.jpg in Resources */,
+				185A08401BDB3F060031B8BD /* 4.jpg in Resources */,
 				E9917B2F1BDA2054003281CB /* 1.jpg in Resources */,
 				E9917B2E1BDA2054003281CB /* 0.jpg in Resources */,
 				E9917B301BDA2054003281CB /* 2.jpg in Resources */,
+				185A08431BDB3F060031B8BD /* 7.jpg in Resources */,
+				185A08451BDB3F060031B8BD /* 9.jpg in Resources */,
 				E44F3E0A1BD8C094008C8DC0 /* LaunchScreen.storyboard in Resources */,
 				E44F3E071BD8C094008C8DC0 /* Assets.xcassets in Resources */,
 			);
@@ -581,6 +609,7 @@
 			baseConfigurationReference = B2EA54C8449E2F0FD0F9DAF5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = RTUpyunBatchUploadDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemo;
@@ -593,6 +622,7 @@
 			baseConfigurationReference = D9EF5B98FAFF500926681B73 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INPUT_FILETYPE = automatic;
 				INFOPLIST_FILE = RTUpyunBatchUploadDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mylonly.upyun.RTUpyunBatchUploadDemo;

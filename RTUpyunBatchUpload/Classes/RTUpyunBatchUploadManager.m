@@ -15,8 +15,7 @@
 {
     NSString* m_buket;
     NSString* m_passcode;
-    
-    dispatch_queue_t m_uploadQueue;
+
     NSTimer* m_timer;
 }
 @end
@@ -83,6 +82,19 @@
     if ([_uploadQueues containsObject:uploader]) {
         [_uploadQueues removeObject:uploader];
     }
+}
+
+- (RTUpyunSingleUploader*)getUploader:(NSString *)localPath
+{
+    NSArray* array = [NSArray arrayWithArray:_uploadQueues];
+    for (RTUpyunSingleUploader* uploader in array)
+    {
+        if ([uploader.uploadFileLocalPath isEqualToString:localPath])
+        {
+            return uploader;
+        }
+    }
+    return nil;
 }
 
 

@@ -74,4 +74,9 @@
     });
 }
 
+- (void)observeSingleUploaderProgress:(id)observer byLocalPath:(NSString *)localPath
+{
+
+}
+
 @end
