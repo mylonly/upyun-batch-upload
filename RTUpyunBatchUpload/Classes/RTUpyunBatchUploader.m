@@ -41,7 +41,7 @@
             }
             if (totalProgress)
             {
-                totalProgress(totalPrecent/progressDict.allKeys.count);
+                totalProgress(totalPrecent/uploaders.count);
             }
             if (_logOn)
             {
@@ -93,7 +93,7 @@
         NSLog(@"BatchUploader --> 共%d个文件",(int)localPaths.count);
     }
     
-    __block NSMutableDictionary* progressDict = [[NSMutableDictionary alloc] init];
+    __block NSMutableDictionary* progressDict = [[NSMutableDictionary alloc] initWithCapacity:localPaths.count];
     __block BOOL totalSuccess = YES;
     dispatch_group_t uploadGroup = dispatch_group_create();
     for (int i = 0;i < localPaths.count;i++)
@@ -116,9 +116,7 @@
         };
         uploader.whenProgress = ^(double precent)
         {
-            
             [progressDict setValue:[NSNumber numberWithDouble:precent] forKey:localPath];
-            
             double totalProgress = 0.f;
             for (NSNumber* number in progressDict.allValues)
             {

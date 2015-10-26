@@ -38,7 +38,7 @@
     m_localPaths = [[NSMutableArray alloc] init];
     m_serverPaths = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i <10;i++)
+    for (int i = 0; i <8;i++)
     {
         NSString * url = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d",i] ofType:@"jpg"];
         [m_localPaths addObject:url];
