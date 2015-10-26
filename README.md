@@ -12,7 +12,7 @@
   2. 需要使用的文件中包含头文件 `#import "RTUpyunBatchUploader.h"`
   3. 使用上传功能
     
-```
+    ```
     RTUpyunBatchUploader* batch = [[RTUpyunBatchUploader alloc] initWithBucket:@"你的又拍云buket" andPasscode:@"buket对应的passcode"];
     batch.logOn = YES;
     batch.singleProgress = ^(NSString* localPath, float percent)
