@@ -52,7 +52,6 @@ typedef void (^UploadProgressBlock)(double precent);
             withBucket:(NSString*)bucket
           withPasscode:(NSString*)passcode;
 
-
 - (void)runloop;
 
 - (void)upload;

@@ -14,9 +14,10 @@
 {
     
     UITableView* m_tableView;
-    
     NSMutableArray* m_localPaths;
     NSMutableArray* m_serverPaths;
+    
+    NSMutableArray* m_uploaders;
 }
 @end
 
@@ -52,23 +53,28 @@
     
     UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithCustomView:upload];
     self.navigationItem.rightBarButtonItem = item;
+    
+    [m_localPaths enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *  stop) {
+        RTUpyunSingleUploader* uploader = [[RTUpyunSingleUploader alloc] initWithFilePath:obj savePath:m_serverPaths[idx] withBucket:@"babyun-stage" withPasscode:@"tFSoUOmw3NkNY6DKmqVnYcTqDaY="];
+        if (!m_uploaders) {
+            m_uploaders = [[NSMutableArray alloc] init];
+        }
+        [m_uploaders addObject:uploader];
+    }];
+
 }
 
 #pragma mark ACTION
 - (void)uploadAction:(UIButton*)sender
 {
-    RTUpyunBatchUploader* batch = [[RTUpyunBatchUploader alloc] initWithBucket:@"babyun-stage" andPasscode:@"tFSoUOmw3NkNY6DKmqVnYcTqDaY="];
-    batch.logOn = YES;
-    batch.singleProgress = ^(NSString* localPath, float percent)
-    {
-        NSInteger index = [m_localPaths indexOfObject:localPath];
-        UITableViewCell* cell = [m_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
-        cell.textLabel.text = [NSString stringWithFormat:@"%f",percent];
-    };
-    [batch uploadFiles:m_localPaths savePaths:m_serverPaths withProgress:^(double precent) {
+    
+    RTUpyunBatchUploader* batchUploader = [[RTUpyunBatchUploader alloc] init];
+    batchUploader.maxUploading = 2;
+    batchUploader.logOn = YES;
+    [batchUploader uploadFiles:m_uploaders withProgress:^(double precent) {
         self.title = [NSString stringWithFormat:@"总上传进度:%f",precent];
     } withCompleted:^(BOOL success) {
-        self.title = @"又拍云批量上传";
+        self.title = success?@"上传成功":@"上传失败";
     }];
 }
 
@@ -93,6 +99,14 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg",(int)indexPath.row]];
+    RTUpyunSingleUploader* uploader = [m_uploaders objectAtIndex:indexPath.row];
+    uploader.whenProgress = ^(double precent)
+    {
+        cell.textLabel.text = [NSString stringWithFormat:@"上传进度:%f",precent];
+    };
+    uploader.whenCompleted = ^(BOOL success){
+        cell.textLabel.text = success?@"上传成功":@"上传失败";
+    };
     return cell;
 }
 
