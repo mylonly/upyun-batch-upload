@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RTUpyunBatchUploadManager.h"
 
 
 typedef enum
@@ -27,6 +26,8 @@ typedef void (^UploadProgressBlock)(double precent);
 @interface RTUpyunSingleUploader : NSObject
 
 @property (nonatomic,assign) BOOL isSend; //已被发送
+
+@property (nonatomic,assign) BOOL logOn; //开启日志
 
 @property (nonatomic,assign) float percent; //百分比
 

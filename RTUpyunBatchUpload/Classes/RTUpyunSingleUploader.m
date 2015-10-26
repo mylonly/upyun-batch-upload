@@ -10,6 +10,7 @@
 #import "UMUUploaderManager.h"
 #import "NSString+NSHash.h"
 #import "NSString+Base64Encode.h"
+#import "RTUpyunBatchUploadManager.h"
 
 @interface RTUpyunSingleUploader()
 {
@@ -82,6 +83,7 @@
     if (RTUPLOADSTATE_CREATED == _state)
     {
         //noting to do
+        [self notifyCreated];
     }
     else if (RTUPLOADSTATE_SENDING == _state)
     {
@@ -90,6 +92,7 @@
     else if (RTUPLOADSTATE_WAITING == _state)
     {
         //nothing to do
+        [self notifyWaiting];
     }
     else if (RTUPLOADSTATE_SUCCESS == _state)
     {
@@ -118,8 +121,28 @@
     }
 }
 
+- (void)notifyCreated
+{
+    if (_logOn)
+    {
+        NSLog(@"uploader --> created...");
+    }
+}
+
+- (void)notifyWaiting
+{
+    if (_logOn)
+    {
+        NSLog(@"uploader --> waiting...");
+    }
+}
+
 - (void)notifySending
 {
+    if (_logOn)
+    {
+        NSLog(@"uploader --> sending...");
+    }
     UMUUploaderManager * manager = [UMUUploaderManager managerWithBucket:_bucket];
     m_operation = [manager uploadWithFile:m_uploadData policy:m_policy signature:m_signature progressBlock:^(CGFloat percent, long long requestDidSendBytes) {
         NSLog(@"%f",percent);
@@ -128,16 +151,30 @@
         {
             _whenProgress(percent);
         }
+        if (_logOn)
+        {
+            NSLog(@"uploader --> percent:%lf",percent);
+        }
     } completeBlock:^(NSError *error, NSDictionary *result, BOOL completed) {
-        NSLog(@"completed");
+        if(_logOn)
+        {
+            NSLog(@"uploader --> completed");
+        }
+        if (_whenProgress)
+        {
+            _whenProgress(1.0f);
+        }
         [self setNextState:completed?RTUPLOADSTATE_SUCCESS:RTUPLOADSTATE_FAILED];
     }];
-    NSLog(@"Uploader Sending....");
     [self setNextState:RTUPLOADSTATE_WAITING];
 }
 
 - (void)notifySuccess
 {
+    if (_logOn)
+    {
+        NSLog(@"uploader --> success!!!");
+    }
     if (_whenCompleted)
     {
         _whenCompleted(YES);
@@ -148,6 +185,11 @@
 
 - (void)notifyFailed
 {
+    if (_logOn)
+    {
+        NSLog(@"uploader --> faileder!!!");
+    }
+    
     if (_whenCompleted)
     {
         _whenCompleted(NO);
@@ -157,6 +199,11 @@
 
 - (void)notifyCanceled
 {
+    if (_logOn)
+    {
+        NSLog(@"uploader --> canceled!!!");
+    }
+    
     if (_whenCompleted)
     {
         _whenCompleted(NO);
@@ -165,7 +212,10 @@
 
 - (void)notifySuspend
 {
-    
+    if (_logOn)
+    {
+        NSLog(@"uploader --> suspend!!!");
+    }
 }
 
 

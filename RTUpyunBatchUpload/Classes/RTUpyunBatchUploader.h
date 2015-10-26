@@ -9,7 +9,15 @@
 #import <Foundation/Foundation.h>
 #import "RTUpyunSingleUploader.h"
 
+typedef void (^RTProgressBlock)(NSString* localPath,float precent);
+
 @interface RTUpyunBatchUploader : NSObject
+
+@property (nonatomic,copy) RTProgressBlock singleProgress;
+
+@property (nonatomic,assign) BOOL logOn;
+
+@property (nonatomic,assign) NSInteger maxUpload; //最大同时上传数量
 
 - (id)initWithBucket:(NSString*)bucket andPasscode:(NSString*)passcode;
 
@@ -17,7 +25,5 @@
           savePaths:(NSArray*)serverPaths
        withProgress:(UploadProgressBlock)progress
       withCompleted:(UploadCompletedBlock)completed;
-
-- (void)observeSingleUploaderProgress:(id)observer byLocalPath:(NSString*)localPath;
 
 @end

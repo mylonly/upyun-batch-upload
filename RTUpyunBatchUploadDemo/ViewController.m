@@ -15,7 +15,8 @@
     
     UITableView* m_tableView;
     
-    NSMutableArray* m_testImagesPath;
+    NSMutableArray* m_localPaths;
+    NSMutableArray* m_serverPaths;
 }
 @end
 
@@ -33,12 +34,14 @@
     m_tableView.dataSource = self;
     [self.view addSubview:m_tableView];
 
-    m_testImagesPath = [[NSMutableArray alloc] init];
+    m_localPaths = [[NSMutableArray alloc] init];
+    m_serverPaths = [[NSMutableArray alloc] init];
     
-    for (int i = 0; i <4;i++)
+    for (int i = 0; i <10;i++)
     {
         NSString * url = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d",i] ofType:@"jpg"];
-        [m_testImagesPath addObject:url];
+        [m_localPaths addObject:url];
+        [m_serverPaths addObject:[NSString stringWithFormat:@"%d.jpg",i]];
     }
     
     UIButton* upload = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
@@ -54,10 +57,16 @@
 #pragma mark ACTION
 - (void)uploadAction:(UIButton*)sender
 {
-    NSArray* serverPaths = @[@"0.jpg",@"1.jpg",@"2.jpg",@"3.jpg"];
     RTUpyunBatchUploader* batch = [[RTUpyunBatchUploader alloc] initWithBucket:@"babyun-stage" andPasscode:@"tFSoUOmw3NkNY6DKmqVnYcTqDaY="];
-    [batch uploadFiles:m_testImagesPath savePaths:serverPaths withProgress:^(double precent) {
-        self.title = [NSString stringWithFormat:@"上传进度:%f",precent];
+    batch.logOn = YES;
+    batch.singleProgress = ^(NSString* localPath, float percent)
+    {
+        NSInteger index = [m_localPaths indexOfObject:localPath];
+        UITableViewCell* cell = [m_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
+        cell.textLabel.text = [NSString stringWithFormat:@"%f",percent];
+    };
+    [batch uploadFiles:m_localPaths savePaths:m_serverPaths withProgress:^(double precent) {
+        self.title = [NSString stringWithFormat:@"总上传进度:%f",precent];
     } withCompleted:^(BOOL success) {
         self.title = @"又拍云批量上传";
     }];
@@ -67,7 +76,7 @@
 #pragma mark tableView DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return m_testImagesPath.count;
+    return m_localPaths.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
