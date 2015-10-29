@@ -22,7 +22,8 @@ typedef void (^RTProgressBlock)(NSString* localPath,float precent);
 
 
 /**
- *  构造RTUpyunSingleUploader 数组来完成上传
+ *  构造RTUpyunSingleUploader 数组来完成上传 
+ *  PS: 每个单个uploader的progress和completed回调block需要在本函数调用之前赋值
  *
  *  @param uploaders 需要上传的uploader数组
  *  @param totalProgress 整体上传进度
