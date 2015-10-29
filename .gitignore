@@ -1,0 +1,8 @@
+#忽略Pods文件夹
+Pods/
+
+#忽略workspace工程
+*.xcworkspace
+
+#忽略xcode 用户文件
+xcuserdata/
