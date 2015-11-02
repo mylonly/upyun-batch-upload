@@ -13,12 +13,6 @@
     ```
     RTUpyunBatchUploader* batch = [[RTUpyunBatchUploader alloc] initWithBucket:@"你的又拍云buket" andPasscode:@"buket对应的passcode"];
     batch.logOn = YES;
-    batch.singleProgress = ^(NSString* localPath, float percent)
-    {
-        NSInteger index = [m_localPaths indexOfObject:localPath];
-        UITableViewCell* cell = [m_tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
-        cell.textLabel.text = [NSString stringWithFormat:@"%f",percent];
-    };
     [batch uploadFiles:m_localPaths savePaths:m_serverPaths withProgress:^(double precent) {
         self.title = [NSString stringWithFormat:@"总上传进度:%f",precent];
     } withCompleted:^(BOOL success) {
@@ -33,6 +27,13 @@
             m_uploaders = [[NSMutableArray alloc] init];
         }
         [m_uploaders addObject:uploader];
+        uploader.whenProgress = ^(double precent)
+        {
+            NSLog(@"上传进度:%f",precent);
+        };
+        uploader.whenCompleted = ^(BOOL success){
+            NSLog(@"%@",success?@"上传成功":@"上传失败");
+        };
     }];
     RTUpyunBatchUploader* batchUploader = [[RTUpyunBatchUploader alloc] init];
     batchUploader.maxUploading = 2;
